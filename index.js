@@ -401,4 +401,4 @@ style.textContent = `
         to { transform: translateX(-50%) translateY(-100%); opacity: 0; }
     }
 `;
-document.head.appendChild(style)
+document.head.appendChild(style);
