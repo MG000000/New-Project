@@ -401,9 +401,4 @@ style.textContent = `
         to { transform: translateX(-50%) translateY(-100%); opacity: 0; }
     }
 `;
-document.head.appendChild(style);
-
-// ===== Console Welcome Message =====
-console.log('%cمنصة ثورة تعليمية', 'font-size: 24px; font-weight: bold; color: #1a237e;');
-console.log('%cلطلاب الثانوية العامة', 'font-size: 14px; color: #666;');
-console.log('%cجميع الفيديوهات مجانية 100%', 'font-size: 12px; color: #4caf50;');
+document.head.appendChild(style)
