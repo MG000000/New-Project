@@ -1,0 +1,103 @@
+
+html_code = '''<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة ثورة تعليمية - ثانوية عامة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>📚 منصة ثورة تعليمية</h1>
+            <p>أفضل المدرسين ومشاهدة الفيديوهات التعليمية مجاناً لطلاب الثانوية العامة</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Selection Section -->
+        <section class="selection-section" id="selectionSection">
+            <h2>🔍 اختر بياناتك الدراسية</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="year">السنة الدراسية</label>
+                    <select id="year">
+                        <option value="">-- اختر السنة --</option>
+                        <option value="first">أولى ثانوي</option>
+                        <option value="second">ثانية ثانوي</option>
+                        <option value="third">ثالثة ثانوي</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="branch">الشعبة</label>
+                    <select id="branch">
+                        <option value="">-- اختر الشعبة --</option>
+                        <option value="scientific">الشعبة العلمية</option>
+                        <option value="literary">الشعبة الأدبية</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="region">المنطقة</label>
+                    <select id="region">
+                        <option value="">-- اختر المنطقة --</option>
+                        <option value="cairo">القاهرة</option>
+                        <option value="alex">الإسكندرية</option>
+                        <option value="giza">الجيزة</option>
+                        <option value="mansoura">المنصورة</option>
+                        <option value="tanta">طنطا</option>
+                        <option value="online">أونلاين (عبر الإنترنت)</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn-search" id="btnSearch">
+                <span class="btn-icon">🔍</span>
+                <span>ابحث عن أفضل المدرسين</span>
+            </button>
+        </section>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>جاري البحث عن أفضل المدرسين...</p>
+        </div>
+
+        <!-- Results Section -->
+        <section class="results-section" id="resultsSection">
+            <div class="results-header">
+                <h2 class="section-title">⭐ أفضل المدرسين</h2>
+                <span class="results-count" id="resultsCount"></span>
+            </div>
+            <div class="teachers-grid" id="teachersGrid"></div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="videos-section" id="videosSection">
+            <div class="videos-header">
+                <h3 id="videosTitle">🎬 فيديوهات المدرس</h3>
+                <button class="btn-close-videos" id="btnCloseVideos">
+                    <span>✕</span>
+                    <span>إغلاق</span>
+                </button>
+            </div>
+            <div class="videos-grid" id="videosGrid"></div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>منصة ثورة تعليمية © 2026 - لطلاب الثانوية العامة</p>
+            <p class="footer-sub">جميع الفيديوهات مجانية 100% للطلاب</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
